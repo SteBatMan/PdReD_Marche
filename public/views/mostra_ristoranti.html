@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lista punti ristoro</title>
+  </head>
+  <form action="/">
+    <button type="submit"  id="backBtn"> Back</button> 
+</form>
+   <h1>
+    Punti ristoro nelle Marche
+  </h1>
+    <hr>
+    <body>
+      <p id="lista"></p>      
+      <script>
+        
+        // avvio della funzione puntiristoro quando viene caricata la pagina
+        window.addEventListener('load', puntiristoro); 
+    
+          async function puntiristoro() {
+              // attendo la risposta della chiamata di recupero dei dati
+              const response = await fetch("mostratutto");
+              // procedi solo una volta che la promessa è stata risolta
+              const dati = await response.json();
+    
+              for(let i = 0; i < dati.length; i++){
+                
+                if(dati[i].Denominazione != undefined || dati[i].Comune != undefined){
+                  var descrizione = "Nome: " + dati[i].Denominazione + "<br>" +
+                                    "Comune: " + dati[i].Comune + "<br>" +
+                                    "Indirizzo: " + dati[i].Indirizzo + ", " +  dati[i].Civico + "<br>" +
+                                    "Telefono: " + dati[i].Telefono + "<br>" +
+                                    "Email: " + dati[i].Email + "<br>" +
+                                    "Coordinate: " + dati[i].Latitudine + " lat, " + dati[i].Longitudine + " long" +  "<br><br>";
+                }
+
+                const par = document.getElementById("lista");
+                par.innerHTML += descrizione;
+              }
+            }
+      </script>
+  </body>
+</html>
