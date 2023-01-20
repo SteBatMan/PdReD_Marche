@@ -36,14 +36,7 @@ app.get('/aggiungi_ristorante', (req, res) => {
   res.render('aggiungi_ristorante.html');
 });
 
-//elimina
-app.get('/elimina_ristorante', (req, res) => {
-  res.render('elimina_ristorante.html');
-});
-
-
 // endpoint get
-
 app.get('/mostratutto', (req, res) => {
   res.json(parser);
 });
