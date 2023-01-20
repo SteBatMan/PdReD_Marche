@@ -23,7 +23,7 @@
           async function puntiristoro() {
               // attendo la risposta della chiamata di recupero dei dati
               const response = await fetch("mostratutto");
-              // procedi solo una volta che la promessa è stata risolta
+              // procedi solo una volta che la richiesta è stata risolta
               const dati = await response.json();
     
               for(let i = 0; i < dati.length; i++){
@@ -36,7 +36,7 @@
                                     "Email: " + dati[i].Email + "<br>" +
                                     "Coordinate: " + dati[i].Latitudine + " lat, " + dati[i].Longitudine + " long" +  "<br><br>";
                 }
-
+                // visualizzo tutti i punti ristoro presenti nel file JSON
                 const par = document.getElementById("lista");
                 par.innerHTML += descrizione;
               }
