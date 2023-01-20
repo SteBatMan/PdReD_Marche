@@ -87,11 +87,9 @@ app.put('/modifica_ristorante', (req, res) => {
       parser[i].Comune = req.body.Comune.toUpperCase();
       parser[i].Indirizzo = req.body.Indirizzo;
       parser[i].Civico = req.body.Civico;
-      parser[i].Email = req.body.Email;
       parser[i].Sito_web = req.body.Sito_web;
       parser[i].Latitudine = req.body.Latitudine;
       parser[i].Longitudine = req.body.Longitudine;
-      parser[i].Orario_di_Apertura = req.body.Orario_di_Apertura;
       dati.writeFileSync('public/data.json', JSON.stringify(parser));
       return res.status(200).send("Punto ristoro modificato!");
     }
