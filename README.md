@@ -56,14 +56,21 @@ Per raggiungere il servizio proposto è necessaro collegarsi al sito https://pun
 ## Test vari
 
 - ![index](https://cdn.glitch.global/90eca12d-755b-4ca9-8346-30e832a9f895/Index.png?v=1674224670699)
-  Visione della pagine HTML principale, dove è possibile selezionare le voci del menù.
+
+     Visione della pagine HTML principale, dove è possibile selezionare le voci del menù.
 
 - ![mostra](https://cdn.glitch.global/90eca12d-755b-4ca9-8346-30e832a9f895/Mostra.png?v=1674224656438)
-  Visione della pagina HTML per visualizzare la lista dei punti ristoro.
+
+     Visione della pagina HTML per visualizzare la lista dei punti ristoro.
 
 - ![aggiungi](https://cdn.glitch.global/90eca12d-755b-4ca9-8346-30e832a9f895/Aggiungi.png?v=1674224678309)
-  Visione della pagine HTML per l'aggiunta di un nuovo punto ristoro.
+
+     Visione della pagine HTML per l'aggiunta di un nuovo punto ristoro.
+  
 - ![modifica](https://cdn.glitch.global/90eca12d-755b-4ca9-8346-30e832a9f895/Modifica.png?v=1674224665173)
-  Visione della piattaforma Postman per l'avvenuta modifica di un punto ristoro già esistente.
+
+     Visione della piattaforma Postman per l'avvenuta modifica di un punto ristoro già esistente.
+  
 - ![rimuovi](https://cdn.glitch.global/90eca12d-755b-4ca9-8346-30e832a9f895/rimuovi.png?v=1674224643165)
-  Visione della piattaforma Postman per l'avvenuta rimozione di un punto ristoro.
+   
+     Visione della piattaforma Postman per l'avvenuta rimozione di un punto ristoro.
